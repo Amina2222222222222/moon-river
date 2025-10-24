@@ -1,0 +1,222 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+body.tab-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  padding: 2rem 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d4af37;
+}
+
+.language-switcher {
+  font-size: 0.9rem;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.collection-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+.collection-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.product-image {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .product-image {
+    height: 200px;
+  }
+}
+
+.category-card.men {
+  background: linear-gradient(135deg, #2c3e50, #4a69bd);
+  color: #fff;
+}
+.category-card.women {
+  background: linear-gradient(135deg, #6a11cb, #fc466b);
+  color: #fff;
+}
+
+.category-content {
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.category-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.category-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: none;
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #2c3e50, #4a69bd);
+  color: #fff;
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+.tab-highlight {
+  background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.notification-container {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 300px;
+  transform: translateX(400px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.notification.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.notification-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.notification-icon.icon-info {
+  background: #40585c;
+}
+
+.notification-icon.icon-success {
+  background: #28a745;
+}
+
+.notification-icon.icon-warning {
+  background: #ffc107;
+}
+
+.notification-icon.icon-error {
+  background: #dc3545;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.notification-message {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.notification-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 12px;
+}/*# sourceMappingURL=style.css.map */
